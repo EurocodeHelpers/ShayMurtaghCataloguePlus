@@ -29,9 +29,5 @@ namespace ShayMurtaghClassLibrary
 
         public string Summary => $"{Beam.Type}'s @ {Beam.Spacing}mm centers. Dbeam = {Beam.Dbeam} and Tslab = {Beam.Dslab} - Dtotal = {Beam.Dtot}." +
             $"Util = {Util}, Remaining Depth = {RemainingDepth}";
-
-
-       
-
     }
 }

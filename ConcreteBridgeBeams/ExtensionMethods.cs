@@ -16,7 +16,5 @@ namespace ConcreteBridgeBeams
                 mainList.Add(beam);
             }
         }
-
-
     }
 }

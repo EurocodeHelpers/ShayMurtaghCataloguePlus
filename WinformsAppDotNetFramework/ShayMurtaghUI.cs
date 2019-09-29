@@ -27,17 +27,32 @@ namespace WinformsApp
             Application.Run(new SPLASH());
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
+        private void btnCalculate_Click_1(object sender, EventArgs e)
         {
-            PopulateOptimumDesignTable();
-            PopulateBeamTable(ybeamTypes, dgvYbeams);
-            PopulateBeamTable(ubeamTypes, dgvUbeams);
-            PopulateBeamTable(boxbeamTypes, dgvBoxbeams);
-            PopulateBeamTable(tbeamTypes, dgvTBeams);
-            PopulateBeamTable(tybeamTypes, dgvTYbeams);
-            PopulateBeamTable(wbeamTypes, dgvWbeams);
-            PopulateBeamTable(mbeamTypes, dgvMbeams);
-            PopulateBeamTable(mybeamTypes, dgvMybeams);
+            //Validate L and Dmax textboxes. 
+
+            double l = 0;
+            double dmax = 0;
+
+            bool isLValid = double.TryParse(txtL.Text, out l);
+            bool isDmaxValid = double.TryParse(txtDmax.Text, out dmax);
+
+            if (isLValid && isDmaxValid && l>=0 && dmax >=0 )
+            {
+                PopulateOptimumDesignTable();
+                PopulateBeamTable(ybeamTypes, dgvYbeams);
+                PopulateBeamTable(ubeamTypes, dgvUbeams);
+                PopulateBeamTable(boxbeamTypes, dgvBoxbeams);
+                PopulateBeamTable(tbeamTypes, dgvTBeams);
+                PopulateBeamTable(tybeamTypes, dgvTYbeams);
+                PopulateBeamTable(wbeamTypes, dgvWbeams);
+                PopulateBeamTable(mbeamTypes, dgvMbeams);
+                PopulateBeamTable(mybeamTypes, dgvMybeams);
+            }
+            else
+            {
+                MessageBox.Show("Invalid values for L and Dmax entered - please check input and try again.");
+            }           
         }
 
         private List<string> ybeamTypes = new List<string> { "Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Y7", "Y8" };
@@ -60,12 +75,11 @@ namespace WinformsApp
             List<IBeam> fullCatalogue = beamCatalogue.GetFullCatalogue();
 
             SuitableSections ss = new SuitableSections(L, dmax, fullCatalogue);
-            var suitableDesigns = ss.GetSuitableSections();
+            List<DesignVerification> suitableDesigns = ss.GetSuitableSections();
 
-            //Parse to dgv
-            int numberOfDesigns = suitableDesigns.Count();
+            //Add a row in the dgv for each suitable section, keeping track of row index using
+            //variable counter.             
             int counter = 0;
-
             foreach (DesignVerification design in suitableDesigns)
             {
                 dgvOptimumDesigns.Rows.Add();
@@ -146,8 +160,12 @@ namespace WinformsApp
 
 
 
-
         #region Event Graveyward
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -174,15 +192,32 @@ namespace WinformsApp
 
         }
 
-
-        #endregion
-
         private void tpUBeam_Click(object sender, EventArgs e)
         {
 
         }
 
         private void dgvTBeams_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+
+
+        #endregion
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShayMurtaghUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
 
         }
