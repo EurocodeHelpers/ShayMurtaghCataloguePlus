@@ -46,17 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\DGVHelpers.cs" />
-    <Compile Include="ShayMurtaghDesignTool.cs">
+    <Compile Include="Helpers\Splash.cs" />
+    <Compile Include="SPLASH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShayMurtaghDesignTool.designer.cs">
-      <DependentUpon>ShayMurtaghDesignTool.cs</DependentUpon>
+    <Compile Include="SPLASH.Designer.cs">
+      <DependentUpon>SPLASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DGVHelpers.cs" />
+    <Compile Include="ShayMurtaghUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShayMurtaghUI.designer.cs">
+      <DependentUpon>ShayMurtaghUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ShayMurtaghDesignTool.resx">
-      <DependentUpon>ShayMurtaghDesignTool.cs</DependentUpon>
+    <EmbeddedResource Include="ShayMurtaghUI.resx">
+      <DependentUpon>ShayMurtaghUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,7 +73,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SPLASH.resx">
+      <DependentUpon>SPLASH.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,6 +96,15 @@
       <Project>{FE3E63F4-D12F-4093-99FB-F732586CC477}</Project>
       <Name>ShayMurtaghClassLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shaymurtaghVerticalBanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

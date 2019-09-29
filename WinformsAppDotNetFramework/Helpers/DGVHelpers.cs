@@ -9,7 +9,7 @@ namespace WinformsAppDotNetFramework.Helpers
 {
     public static class DGVHelpers
     {
-        public static void RemoveAllRows(DataGridView dgv)
+        public static void RemoveAllRows(this DataGridView dgv)
         {
             do
             {
