@@ -44,7 +44,12 @@
     <Compile Include="BeamCatalogue.cs" />
     <Compile Include="BeamTypes\BoxBeam.cs" />
     <Compile Include="BeamTypes\IBeam.cs" />
+    <Compile Include="BeamTypes\MYBeam.cs" />
+    <Compile Include="BeamTypes\TYBeam.cs" />
+    <Compile Include="BeamTypes\TBeam.cs" />
     <Compile Include="BeamTypes\UBeam.cs" />
+    <Compile Include="BeamTypes\MBeam.cs" />
+    <Compile Include="BeamTypes\WBeam.cs" />
     <Compile Include="BeamTypes\YBeam.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
