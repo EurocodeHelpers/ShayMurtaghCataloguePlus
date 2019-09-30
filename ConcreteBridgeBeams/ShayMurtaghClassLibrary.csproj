@@ -7,8 +7,8 @@
     <ProjectGuid>{FE3E63F4-D12F-4093-99FB-F732586CC477}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConcreteBridgeBeams</RootNamespace>
-    <AssemblyName>ConcreteBridgeBeams</AssemblyName>
+    <RootNamespace>ShayMurtaghClassLibrary</RootNamespace>
+    <AssemblyName>ShayMurtaghClassLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

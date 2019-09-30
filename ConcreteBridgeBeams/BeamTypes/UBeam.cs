@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConcreteBridgeBeams.BeamTypes
+namespace ShayMurtaghClassLibrary
 {
     class UBeam : IBeam
     {

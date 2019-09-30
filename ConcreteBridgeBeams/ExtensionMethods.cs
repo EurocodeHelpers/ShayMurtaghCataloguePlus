@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConcreteBridgeBeams
+namespace ShayMurtaghClassLibrary
 {
     public static class ExtensionMethods
     {

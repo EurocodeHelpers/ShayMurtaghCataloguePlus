@@ -1,5 +1,4 @@
-﻿using ConcreteBridgeBeams;
-using ShayMurtaghClassLibrary;
+﻿using ShayMurtaghClassLibrary;
 using System;
 using System.Collections.Generic;
 using System.Data;
