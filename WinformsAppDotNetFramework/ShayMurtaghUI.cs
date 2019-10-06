@@ -149,10 +149,19 @@ namespace WinformsApp
                 dgv.Rows[counter].Cells[7].Value = beamTypeSpacings[0].Dtot;
 
                 counter++;
+
+                DeleteLastRowIfBlank(dgv);
             }
         }
 
+        private void DeleteLastRowIfBlank(DataGridView dgv)
+        {
+            if (dgv.Rows[dgv.Rows.Count-1].Cells[0].Value == "")
+            {
+                dgv.Rows.RemoveAt(dgv.Rows.Count - 1);
+            }
 
+        }
 
 
 
@@ -162,6 +171,21 @@ namespace WinformsApp
         #region Event Graveyward
 
         private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShayMurtaghUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
 
         }
@@ -206,19 +230,6 @@ namespace WinformsApp
 
         #endregion
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ShayMurtaghUI_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

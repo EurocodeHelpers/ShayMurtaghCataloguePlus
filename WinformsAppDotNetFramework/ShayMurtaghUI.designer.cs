@@ -458,7 +458,10 @@
             // 
             // dgvOptimumDesigns
             // 
+            this.dgvOptimumDesigns.AllowUserToAddRows = false;
+            this.dgvOptimumDesigns.AllowUserToDeleteRows = false;
             this.dgvOptimumDesigns.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.dgvOptimumDesigns.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvOptimumDesigns.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
