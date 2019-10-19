@@ -168,7 +168,7 @@ namespace WinformsApp
 
 
 
-        #region Event Graveyward
+        #region EventHandler Graveyard
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {

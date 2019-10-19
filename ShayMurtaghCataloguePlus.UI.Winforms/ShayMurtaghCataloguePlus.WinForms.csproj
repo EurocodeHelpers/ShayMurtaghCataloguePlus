@@ -101,9 +101,9 @@
     <None Include="Resources\blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConcreteBridgeBeams\ShayMurtaghClassLibrary.csproj">
+    <ProjectReference Include="..\ShayMurtaghCataloguePlus.Core.DotNetFramework2-0\ShayMurtaghCataloguePlus.Core.csproj">
       <Project>{fe3e63f4-d12f-4093-99fb-f732586cc477}</Project>
-      <Name>ShayMurtaghClassLibrary</Name>
+      <Name>ShayMurtaghCataloguePlus.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
