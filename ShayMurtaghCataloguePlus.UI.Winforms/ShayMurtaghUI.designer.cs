@@ -2570,8 +2570,7 @@
             this.Name = "ShayMurtaghUI";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Shay Murtagh Prestressed Precast Concrete Bridge Beam -Conceptual Design Wizard V" +
-    "0.9.0";
+            this.Text = "ShayMurtaghCataloguePlus V1.0.0";
             this.Load += new System.EventHandler(this.ShayMurtaghUI_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
