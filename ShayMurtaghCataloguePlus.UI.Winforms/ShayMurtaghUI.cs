@@ -70,7 +70,7 @@ namespace WinformsApp
             double dmax = double.Parse(txtDmax.Text);
             double L = double.Parse(txtL.Text);
 
-            BeamCatalogue beamCatalogue = new BeamCatalogue();
+            IManufacturer beamCatalogue = new ShayMurtagh();
             List<IBeam> fullCatalogue = beamCatalogue.GetFullCatalogue();
 
             SuitableSections ss = new SuitableSections(L, dmax, fullCatalogue);
@@ -106,7 +106,7 @@ namespace WinformsApp
             double L = double.Parse(txtL.Text);
 
             //Get a list of Y8 Beams 
-            var catalogue = new BeamCatalogue();
+            var catalogue = new ShayMurtagh();
             List<IBeam> fullCatalogue = catalogue.GetFullCatalogue();
 
             int counter = 0;
