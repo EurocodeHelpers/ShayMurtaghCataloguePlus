@@ -1,6 +1,6 @@
 # ShayMurtaghCataloguePlus
 
-![Screenshot of Program](https://github.com/EurocodeHelpers/ShayMurtaghCataloguePlus/blob/master/other/PromoScreenshot.png)
+![Screenshot of Program](https://github.com/EurocodeHelpers/ShayMurtaghCataloguePlus/blob/master/Other/PromoScreenshot.png)
 
 This application was developed to help bridge 
 engineers come up with an optimum prestressing 
