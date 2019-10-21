@@ -12,7 +12,7 @@ namespace ShayMurtaghClassLibrary
         public List<IBeam> GetFullCatalogue()
         {
             List<IBeam> fullCatalogue = new List<IBeam>();
-            fullCatalogue.AppendBeamsToListOfIBeam(GetYBeamCatalogue());
+            //fullCatalogue.AppendBeamsToListOfIBeam(GetYBeamCatalogue());
             fullCatalogue.AppendBeamsToListOfIBeam(GetUBeamCatalogue());
             fullCatalogue.AppendBeamsToListOfIBeam(GetBoxBeamCatalogue());
             fullCatalogue.AppendBeamsToListOfIBeam(GetTBeamCatalogue());
@@ -42,9 +42,9 @@ namespace ShayMurtaghClassLibrary
             };
         }
 
-        public List<IBeam> GetYBeamCatalogue()
+        public List<YBeam> GetYBeamCatalogue()
         {
-            return new List<IBeam>()
+            return new List<YBeam>()
             {
                 new YBeam("Y1",1000,700,16.5,19.5),
                 new YBeam("Y1",1500,700,12.5,15.5),

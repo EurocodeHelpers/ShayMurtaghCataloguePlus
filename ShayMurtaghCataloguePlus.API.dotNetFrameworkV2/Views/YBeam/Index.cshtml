@@ -1,0 +1,76 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+	ViewBag.Title = "Y Beam Catalogue";
+}
+
+<h1>Y-Beam Tabulated Summary</h1>
+
+<h1>
+	@ViewBag.Span<span>m</span>
+</h1>
+	
+	@*@ViewBag.Span m Y-Beam Tabulated Summary*@</h1>
+
+<p>Details of all the available Y Beams</p>
+
+<ul>
+	<table class="table	table-hover">
+		<thead>
+			<tr>
+				<td>Type</td>
+				<td>Spacing</td>
+				<td>Dbeam</td>
+				<td>Dslab</td>
+				<td>Dtot</td>
+				<td>Lmin</td>
+				<td>Lmax</td>
+			</tr>
+		</thead>
+		@foreach (var beam in ViewBag.fullCatalogue)
+		{
+			<tr>
+				<td>@beam.Type</td>
+				<td>@beam.Spacing</td>
+				<td>@beam.Dbeam</td>
+				<td>@beam.Dslab</td>
+				<td>@beam.Dtot</td>
+				<td>@beam.Lmin</td>
+				<td>@beam.Lmax</td>
+			</tr>
+		}
+	</table>
+
+	@*<img src="/Content/Images/YBeamSpanTable.png" />*@
+
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="/Content/Images/YBeamSpanTable.png" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/Content/Images/YbeamAbout.png" alt="Second slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="/Content/Images/YbeamDiagram.png" alt="Third slide">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+
+</ul>
+
+
+
+
+

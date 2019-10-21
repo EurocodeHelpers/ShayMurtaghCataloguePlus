@@ -18,6 +18,10 @@ namespace ShayMurtaghCataloguePlus.API.dotNetFrameworkV2
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(name: "FavoriteFoodAndDrink", url: "{controller}/{action}/{food}/{drink}");
+
+
         }
     }
 }
